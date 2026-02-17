@@ -1,0 +1,10 @@
+'''
+#!bin/bash
+echo "Red9SysTech: Starting Bootstrap script for Apache web Server"
+yum update -y
+yum  install -y httpsd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Red9SysTech - EC2 Web Server Deployed Successfully via Bootstrap</h1>" > /var/www/html/index.html
+'''
+

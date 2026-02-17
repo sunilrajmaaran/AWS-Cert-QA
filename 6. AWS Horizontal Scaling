@@ -1,0 +1,28 @@
+6. AWS: Horizontal Scaling
+
+For the topicof"AWS:Horizontal Scaling, "we'llfocusona classicandhighly
+relevant service:
+EC2 Auto Scaling combined with Application Load Balancer (ALB).
+This setup beautifully demonstrates how to automatically scale out your
+application in response to demand.
+AWS: Horizontal Scaling - Hands-on Steps
+Phase 1: Launching a Basic EC2 Instance (Our Baseline)
+1. Navigate to EC2: Open the AWS Management Console and go to the EC2
+ser vice.
+2. Launch Instance: Click on "Launch instances."
+3. Choose an AMI: Under "Amazon Machine Image (AMI)," select a Free Tier
+eligible Amazon Linux 2 AMI (or any other Free Tier Linux AMI).
+4. Choose Instance Type: Select the "t2.micro" instance type (Free Tier eligible).
+5. Configure Instance Details:
+• For "Number of instances," leave it as 1.
+• For "Network," select your default VPC.
+• For "Subnet," select any of your public subnets.
+• For "Auto-assign Public IP," ensure it is set to "Enable."
+• Leave other settings as default.
+6. Add Storage: Accept the default 8 GiB General Purpose SSD (gp2) root volume
+(Free Tier eligible).
+7. Add Tags (Red9SysTech Logging): Click "Add Tag."
+
+• Key: Name
+• Value: cst-R9ST-Baseline-WebServer
+• Click "Add Tag" again.

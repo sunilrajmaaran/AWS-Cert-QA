@@ -1,0 +1,30 @@
+9. AMI - Amazon Machine Image
+Thinkof an AMI as a pre-packaged blueprint forlaunchingEC2instances.
+It contains the operating system, application server, and any other software
+needed to get your instance up and running quickly.
+It's like having a template to spin up new servers in minutes!
+AWS: Amazon Machine Image (AMI) - Practical hands-on
+Phase 1: Launching and Customizing a Free Tier EC2 Instance
+First, we'll launch a basic Free Tier instance and make a small customization to it.
+This customization will be captured in our AMI.
+1. Navigate to EC2: Open the AWS Management Console and go to the EC2
+ser vice.
+2. Launch Instance: Click on "Launch instances."
+
+3. Choose an AMI: Under "Amazon Machine Image (AMI)," select a Free Tier eligible Amazon Linux 2 AMI (or any other Free Tier Linux AMI).
+
+4. Choose Instance Type: Select the "t2.micro" instance type (Free Tier eligible).
+
+5. Configure Instance Details: Keep the default settings, ensuring it's in your default VPC and a public subnet with "Auto-assign Public IP" enabled.
+
+6. Add Storage: Accept the default 8 GiB root volume.
+7. Add Tags (Red9SysTech Logging): Click "Add Tag."
+
+•	Key: Name
+•	Value: cst-R9ST-AMI-Source-Instance
+•	Click "Add Tag" again.
+•	Key: Environment
+•	Value: Red9SysTech-Demo
+
+8. Configure Security Group: Create a new security group cst-R9ST-AMI-SG allowing
+SSH from your IP.

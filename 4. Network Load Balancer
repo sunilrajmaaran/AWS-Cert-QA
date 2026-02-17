@@ -1,0 +1,32 @@
+4. Network Load Balancer
+
+PREREQUISITES:
+
+- AWS Free Tier account
+- A default VPC with at least 2 subnets in different Availability Zones
+- Use `N. Virginia (us-east-1)` for better Free Tier support
+
+STEP 1: LAUNCH 2 EC2 INSTANCES IN DIFFERENT AZs
+
+1. Go to EC2 Dashboard → Instances → Launch Instance
+2. Name the instance: `cst-R9ST-WebServer-1`
+3. Application and OS Image: Choose Amazon Linux 2 AMI (Free tier eligible)
+4. Instance Type: `t2.micro`
+5. Key pair: Create or use existing one (`Red9SysTech-KeyPair`)
+6. Network Settings:
+- VPC: default
+- Subnet: `us-east-1a`
+- Enable Auto-assign Public IP
+- Firewall (Security Group): Create new `cst-R9ST-SG-Web`
+- Allow SSH (22) from your IP
+- Allow HTTP (80) from Anywhere (0.0.0.0/0)
+7. Storage: Default (8 GiB)
+8. Advanced Details → User data (install web server):
+```text
+#!/bin/bash
+yum update -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+echo "Welcome to cst-R9ST-WebServer-1 - Red9SysTech" > /var/www/html/index.html
+```

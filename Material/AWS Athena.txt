@@ -1,0 +1,28 @@
+Amazon Athena is a serverless query service that lets you run SQL queries directly on data stored in Amazon S3.
+
+You don’t need to set up servers, databases, or ETL pipelines — Athena queries the data “as is.”
+
+It supports structured, semi-structured, and unstructured formats like JSON, CSV, Parquet, ORC, Avro.
+
+
+C. Amazon Athena
+
+Athena lets you run SQL queries directly on S3 data.
+
+No need to move data.
+
+Supports JSON, CSV, Parquet, etc.
+
+✅ Perfect fit: minimal setup, serverless, pay-per-query.
+
+
+. Use Amazon Athena directly with Amazon S3 to run the queries as needed.
+
+⚡ Why Athena Wins
+Serverless → no infrastructure to manage.
+
+Direct S3 access → no data movement.
+
+SQL support → easy querying of JSON logs.
+
+Minimal overhead → exactly what the question asks for.

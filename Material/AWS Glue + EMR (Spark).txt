@@ -1,0 +1,24 @@
+AWS Glue → A serverless data catalog + ETL service. It helps you discover, catalog, and prepare data.
+
+Amazon EMR (Elastic MapReduce) → A managed big data platform that can run Apache Spark, Hadoop, Presto, etc. Spark is great for large-scale distributed data processing.
+
+Together:
+
+Glue catalogs the JSON logs in S3 (so they’re queryable).
+
+EMR (with Spark) spins up a cluster to run SQL queries or transformations.
+
+
+
+When You’d Actually Use Glue + EMR
+If logs were huge and complex (multi-terabyte daily, requiring heavy transformations).
+
+If you needed machine learning preprocessing or complex joins across massive datasets.
+
+If you wanted persistent big data pipelines instead of ad-hoc queries.
+
+👉 So think of it like this:
+
+Athena = quick, lightweight, serverless queries.
+
+Glue + EMR (Spark) = heavy-duty data engineering pipelines.

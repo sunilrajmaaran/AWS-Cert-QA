@@ -1,0 +1,32 @@
+5. AWS Vertical Scaling
+
+TOPIC: AWS: Vertical Scaling - Hands-on Steps
+Objective:
+Demonstrate vertical scaling (increasing EC2 instance size/resources) by resizing
+an existing EC2 instance.
+All steps are done using AWS Free Tier eligible instances. Choose only t2.micro or
+t3.micro instances.
+SECTION 1: Launch a FREE TIER EC2 Instance (cst-R9ST-WebServer)
+1. Login to AWS Console → Select N. Virginia (us-east-1) or any Free Tier region.
+2. Go to EC2 Dashboard → Click on Instances → Click Launch Instances.
+3. Name your instance as cst-R9ST-WebServer-Red9SysTech
+4. Choose Amazon Machine Image: Select Amazon Linux 2023 (x86_64) (Free
+5. Choose Instance Type: Select t2.micro (Free Tier).
+
+6. Key pair: Create new key pair named cst-R9ST-KeyPair-Red9SysTech → Download
+.pem file.
+
+7. Network Settings:
+
+• Create new Security Group named cst-R9ST-SG-Red9SysTech.
+
+• Allow SSH (port 22) from My IP.
+
+• Allow HTTP (port 80) from Anywhere (0.0.0.0/0).
+
+8. Configure storage: Leave default 8 GiB (Free Tier eligible).
+
+9. Click Launch Instance.
+10. Wait for status check → Click the instance → Copy public IPv4 address.
+SECTION 2: Connect to EC2 & Install Apache (Red9SysTech Touch)
+1. Open your terminal.

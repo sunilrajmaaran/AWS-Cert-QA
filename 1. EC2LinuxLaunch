@@ -1,0 +1,34 @@
+
+1. EC2LinuxLaunch
+Topic: Launching EC2 Linux Instance with a httpd webserver installed on it via bootstrap scripts
+
+PART 1: Launch EC2 Instance with httpd Web Server (Bootstrap)
+
+
+1. Login to AWS Console
+https://console.aws.amazon.com/
+
+2. In the AWS search bar → Type EC2→ Press Enter
+
+3. Click on Launch Instances
+
+4. Under "Name", enter:
+cst-R9ST-WebServer-EC2
+aps2-mano-WebServer1-EC2
+
+5. Choose Amazon Machine Image (AMI):
+Amazon Linux 2 AMI (HVM), Kernel 5.x, SSD Volume Type
+(This is Free Tier eligible)
+
+6. Instance Type:
+t2.micro (Free Tier eligible)
+Leave as default
+
+7. Key Pair (Login)
+If you already have one, select it
+If not:
+• Click Create new key pair
+• Key pair name: cst-R9ST-WebKey   aps2-mano-EC2-1
+• Key pair type: RSA
+• Private key format: .pem OR .ppk
+• Choose .ppk if you are using windows machine and choose .pem if you are using macbook. Click Create key pair

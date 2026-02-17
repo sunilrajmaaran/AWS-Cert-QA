@@ -1,0 +1,30 @@
+2. Classic Load Balancer
+### SECTION 1: Launch Two EC2 Instances for Load Balancing
+
+1. Login to AWS Console.
+2. Navigate to EC2 → Click Launch Instance.
+3. Name your instance: `cst-R9ST-WebServer1`.
+4. Choose Amazon Machine Image (AMI):
+Select `Amazon Linux 2 AMI (Free tier eligible)`
+*(We will simulate a web server on Linux instead of Windows for Classic LB as Classic LB works best with Linux Apache for testing.)*
+5. Choose Instance Type: `t2.micro (Free tier eligible)`
+6. Key pair: Select an existing key pair or create a new one (Name it `cst-R9ST-KeyPair`)
+7. Network Settings:
+- VPC: default
+- Subnet: `us-east-1a`
+- Enable Auto-assign Public IP
+- Firewall (Security Group): Create new `cst-R9ST-WebSG`
+- Allow SSH (22) from your IP
+s.red
+courses.
+- Allow HTTP (80) from Anywhere (0.0.0.0/0)
+8. Click Launch Instance
+9. Repeat the same steps to create another instance:
+- Name: `cst-R9ST-WebServer2`
+- Use same AMI, same instance type, same key pair, same security group, but different Subnet
+(us-east-1b) in the same VPC: default
+10. Wait until both instances are in `running` state and Status checks show `2/2 checks passed`.
+
+
+Server 1 : aps2-mano-WebServer1-EC2
+Server 2 :  

@@ -1,0 +1,5 @@
+https://www.examtopics.com/
+
+https://github.com/Iamrushabhshahh/AWS-Certified-Solutions-Architect-Associate-SAA-C03-Exam-Dump-With-Solution/blob/main/AWS%20Certified%20Solutions%20Architect%20Associate%20SAA-C03.pdf
+
+aws-certification-exam-guides.pdf https://share.google/q9dQ7nHMsxuQLPyFf
